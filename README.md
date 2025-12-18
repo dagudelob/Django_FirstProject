@@ -37,8 +37,12 @@
 
    esto crea una carpeta nueva con el nombre de la app y dentro de ella varios archivos
    lo más importante son:
-    - MODELS
+    - MODELS.py
+      - add a class car model 
+        class Carro(models.Model):
+        title = models.TextField(max_length=255)
     - VIEWS
     - TEMPLATES
     - URLS
 
+    
