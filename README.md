@@ -19,6 +19,5 @@
     *.py[cod]
 
 
-
 #pip install django
 
