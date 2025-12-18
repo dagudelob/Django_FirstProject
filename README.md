@@ -22,6 +22,10 @@
     pip install django
 
 ## django-admin startproject first_project 
+    esto hace que se abra una carpeta nueva con 2 archivos 
+    First_project # la carpeta del proyecto
+    db.sqlite3 # la base de datos que viene con django. 
+
 
 ## django-admin startapp first_app
 
