@@ -59,6 +59,8 @@
                 'django.contrib.staticfiles',
                 'firstapp' #app name added to settings.py
     - TEMPLATES
-    - URLS
-
+      - create a folder templates inside first_app
+      - create a file car_list.html
     
+    - VIEWs
+      -
