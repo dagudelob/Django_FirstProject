@@ -42,6 +42,10 @@
         class Carro(models.Model):
         title = models.TextField(max_length=255)
     - VIEWS
+      - def myView(request):
+        car_list = [{'title': 'BMW'}, {'title': 'Mazda'}]
+        context = {'car_list': car_list}
+        return render(request, 'myFirstApp/carlist.html', context)
     - TEMPLATES
     - URLS
 
