@@ -46,6 +46,18 @@
         car_list = [{'title': 'BMW'}, {'title': 'Mazda'}]
         context = {'car_list': car_list}
         return render(request, 'myFirstApp/carlist.html', context)
+
+    - first_project\first_project\settings.py > INSTALLED_APPS
+      - # Application definition
+
+            INSTALLED_APPS = [
+                'django.contrib.admin',
+                'django.contrib.auth',
+                'django.contrib.contenttypes',
+                'django.contrib.sessions',
+                'django.contrib.messages',
+                'django.contrib.staticfiles',
+                'firstapp' #app name added to settings.py
     - TEMPLATES
     - URLS
 
