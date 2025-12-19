@@ -1,5 +1,7 @@
 from django.shortcuts import render
 
+
+
 # Create your views here.
 def myView(request):
     
@@ -16,4 +18,4 @@ def myView(request):
         {"title": "Chevrolet"}
     ]
     context = {'car_list': car_list}
-    return render(request, 'myFirstApp/carlist.html', context)
+    return render(request, 'first_app/car_list.html', context)
