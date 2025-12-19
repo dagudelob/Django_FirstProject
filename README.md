@@ -1,5 +1,5 @@
-##Create file 
-.gitignore
+# Create file 
+## .gitignore
 
     # Venv
     .venv/
@@ -11,14 +11,18 @@
     __pycache__/
     *.py[cod]
 
-##Venv
+# Venv
 
     #Create Venv
      $ python -m venv .venv
     #Activate Venv
      $ source .venv/bin/activate 
 
-##Django
+# Requeriments: 
+    - pip freeze > requirements.txt
+    - pip install -r requirements.txt
+
+### Django
     pip install django
 
 ## django-admin startproject first_project .
@@ -37,30 +41,30 @@
 
    esto crea una carpeta nueva con el nombre de la app y dentro de ella varios archivos
    lo más importante son:
-    - MODELS.py
+## - MODELS.py
       - add a class car model 
         class Carro(models.Model):
         title = models.TextField(max_length=255)
-    - VIEWS
+## - VIEWS
       - def myView(request):
         car_list = [{'title': 'BMW'}, {'title': 'Mazda'}]
         context = {'car_list': car_list}
         return render(request, 'myFirstApp/carlist.html', context)
 
-    - first_project\first_project\settings.py > INSTALLED_APPS
+## - first_project\first_project\settings.py > INSTALLED_APPS
       - # Application definition
 
-            INSTALLED_APPS = [
-                'django.contrib.admin',
-                'django.contrib.auth',
-                'django.contrib.contenttypes',
-                'django.contrib.sessions',
-                'django.contrib.messages',
-                'django.contrib.staticfiles',
-                'firstapp' #app name added to settings.py
-    - TEMPLATES
+## - INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'firstapp' #app name added to settings.py
+## - TEMPLATES
       - create a folder templates inside first_app
       - create a file car_list.html
     
-    - VIEWs
+## - VIEWs
       -
